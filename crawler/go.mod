@@ -3,7 +3,7 @@ module Go_practice/crawler
 go 1.15
 
 require (
-	github.com/JohannesKaufmann/html-to-markdown v1.2.0 // indirect
+	github.com/JohannesKaufmann/html-to-markdown v1.2.0
 	github.com/andybalholm/cascadia v1.2.0 // indirect
 	github.com/antchfx/htmlquery v1.2.3 // indirect
 	github.com/antchfx/xmlquery v1.3.0 // indirect

@@ -2,11 +2,12 @@ package main
 
 import (
 	"fmt"
-	md "github.com/JohannesKaufmann/html-to-markdown"
-	"github.com/gocolly/colly"
 	"os"
 	"regexp"
 	"strings"
+
+	md "github.com/JohannesKaufmann/html-to-markdown"
+	"github.com/gocolly/colly"
 )
 
 func main() {
@@ -17,17 +18,11 @@ func main() {
 
 	converter := md.NewConverter("", true, nil)
 
-	/*
-	c.OnRequest(func(r *colly.Request) {
-		fmt.Println("Visiting: ", r.URL)
-	})
-	 */
-
 	c.OnError(func(_ *colly.Response, err error) {
 		fmt.Println("Something went wrong: ", err)
 	})
 
-	c.OnResponse(func (r *colly.Response) {
+	c.OnResponse(func(r *colly.Response) {
 		fmt.Println("Visited: ", r.Request.URL)
 		if r.Request.Depth == 2 {
 			sub := strings.Split(r.Request.URL.Path, "/")
@@ -38,8 +33,7 @@ func main() {
 				os.MkdirAll(localPath, os.ModePerm)
 			}
 
-			f, err := os.OpenFile(localPath + "/" + fileName + ".md", os.O_CREATE|os.O_WRONLY, 0644)
-			//f, err := os.OpenFile("." + r.Request.URL.Path, os.O_CREATE|os.O_WRONLY, 0644)
+			f, err := os.OpenFile(localPath+"/"+fileName+".md", os.O_CREATE|os.O_WRONLY, 0644)
 			if err != nil {
 				fmt.Fprintln(os.Stderr, err)
 				return
@@ -50,7 +44,6 @@ func main() {
 				return
 			}
 
-			//_, err = f.Write(r.Body)
 			_, err = f.Write(markdown)
 			if err != nil {
 				fmt.Fprintln(os.Stderr, err)
@@ -68,4 +61,3 @@ func main() {
 
 	c.Visit(url)
 }
-

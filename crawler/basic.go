@@ -38,8 +38,8 @@ func main() {
 				fmt.Fprintln(os.Stderr, err)
 				return
 			}
-			reg := regexp.MustCompile(`(.html)`)
-			body := reg.ReplaceAllString(string(r.Body), ".md")
+			reg := regexp.MustCompile(`((ch[0-9]*-(([0-9][0-9])|([0-9]*)))|(ch[0-9]*)).html`)
+			body := reg.ReplaceAllString(string(r.Body), "${1}.md")
 			markdown, err := converter.ConvertString(body)
 			if err != nil {
 				fmt.Fprintln(os.Stderr, err)
@@ -54,7 +54,7 @@ func main() {
 	})
 	// Find and visit all links
 	c.OnHTML("a[href]", func(e *colly.HTMLElement) {
-		match, _ := regexp.MatchString("ch[0-9]*/ch[0-9]*-[0-9]*.html", e.Attr("href"))
+		match, _ := regexp.MatchString("ch[0-9]*/((ch[0-9]*-[0-9]*)|(ch[0-9]*)).html", e.Attr("href"))
 		if match {
 			e.Request.Visit(e.Attr("href"))
 		}

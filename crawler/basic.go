@@ -38,13 +38,14 @@ func main() {
 				fmt.Fprintln(os.Stderr, err)
 				return
 			}
-			markdown, err := converter.ConvertBytes(r.Body)
+			reg := regexp.MustCompile(`(.html)`)
+			body := reg.ReplaceAllString(string(r.Body), ".md")
+			markdown, err := converter.ConvertString(body)
 			if err != nil {
 				fmt.Fprintln(os.Stderr, err)
 				return
 			}
-
-			_, err = f.Write(markdown)
+			_, err = f.Write([]byte(markdown))
 			if err != nil {
 				fmt.Fprintln(os.Stderr, err)
 			}

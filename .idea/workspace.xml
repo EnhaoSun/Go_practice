@@ -19,9 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d3177d83-a8bb-4bc7-ad3e-42ac201cd764" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="d3177d83-a8bb-4bc7-ad3e-42ac201cd764" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -53,7 +51,7 @@
     <configuration name="go build Go_practice/ch6/geometry" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="Go_practice" />
       <working_directory value="$PROJECT_DIR$" />
-      <kind value="PACKAGE" />
+      <kind value="FILE" />
       <filePath value="$PROJECT_DIR$/ch6/geometry/main.go" />
       <package value="Go_practice/ch6/geometry" />
       <directory value="$PROJECT_DIR$" />
@@ -104,6 +102,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="752" y="353" key="#Go_Modules/1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1598847297933" />
+    <state x="730" y="345" width="1099" height="744" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1599879647483">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="730" y="345" width="1099" height="744" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1599879647483" />
     <state x="853" y="386" width="926" height="471" key="EnvironmentVariablesDialog" timestamp="1598866201273">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>

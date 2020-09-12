@@ -19,7 +19,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d3177d83-a8bb-4bc7-ad3e-42ac201cd764" name="Default Changelist" comment="" />
+    <list default="true" id="d3177d83-a8bb-4bc7-ad3e-42ac201cd764" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ch6/geometry/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/ch6/geometry/main.go" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -39,13 +42,13 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="configurable.Global.GOPATH.is.expanded" value="true" />
-    <property name="configurable.Module.GOPATH.is.expanded" value="false" />
+    <property name="configurable.Module.GOPATH.is.expanded" value="true" />
     <property name="configurable.Project.GOPATH.is.expanded" value="true" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
     <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RunManager" selected="Go Build.go build Go_practice/ch6/geometry">
     <configuration name="go build Go_practice/ch6/geometry" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
@@ -115,21 +118,25 @@
     </state>
     <state x="740" y="261" key="FileChooserDialogImpl/1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1598847792096" />
     <state x="740" y="271" key="FileChooserDialogImpl/1920.0.1536.864/0.0.1920.1080@0.0.1920.1080" timestamp="1599807000709" />
-    <state width="1877" height="363" key="GridCell.Tab.0.bottom" timestamp="1598865925581">
-      <screen x="0" y="0" width="1920" height="1080" />
+    <state width="2507" height="385" key="GridCell.Tab.0.bottom" timestamp="1599880196920">
+      <screen x="0" y="0" width="2560" height="1400" />
     </state>
+    <state width="2507" height="385" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1599880196920" />
     <state width="1877" height="363" key="GridCell.Tab.0.bottom/1920.0.1536.864/0.0.1920.1080@0.0.1920.1080" timestamp="1598865925581" />
-    <state width="1877" height="363" key="GridCell.Tab.0.center" timestamp="1598865925581">
-      <screen x="0" y="0" width="1920" height="1080" />
+    <state width="2507" height="385" key="GridCell.Tab.0.center" timestamp="1599880196920">
+      <screen x="0" y="0" width="2560" height="1400" />
     </state>
+    <state width="2507" height="385" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1599880196920" />
     <state width="1877" height="363" key="GridCell.Tab.0.center/1920.0.1536.864/0.0.1920.1080@0.0.1920.1080" timestamp="1598865925581" />
-    <state width="1877" height="363" key="GridCell.Tab.0.left" timestamp="1598865925581">
-      <screen x="0" y="0" width="1920" height="1080" />
+    <state width="2507" height="385" key="GridCell.Tab.0.left" timestamp="1599880196920">
+      <screen x="0" y="0" width="2560" height="1400" />
     </state>
+    <state width="2507" height="385" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1599880196920" />
     <state width="1877" height="363" key="GridCell.Tab.0.left/1920.0.1536.864/0.0.1920.1080@0.0.1920.1080" timestamp="1598865925581" />
-    <state width="1877" height="363" key="GridCell.Tab.0.right" timestamp="1598865925581">
-      <screen x="0" y="0" width="1920" height="1080" />
+    <state width="2507" height="385" key="GridCell.Tab.0.right" timestamp="1599880196920">
+      <screen x="0" y="0" width="2560" height="1400" />
     </state>
+    <state width="2507" height="385" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1599880196920" />
     <state width="1877" height="363" key="GridCell.Tab.0.right/1920.0.1536.864/0.0.1920.1080@0.0.1920.1080" timestamp="1598865925581" />
     <state width="1877" height="363" key="GridCell.Tab.1.bottom" timestamp="1598865925582">
       <screen x="0" y="0" width="1920" height="1080" />
@@ -147,9 +154,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1877" height="363" key="GridCell.Tab.1.right/1920.0.1536.864/0.0.1920.1080@0.0.1920.1080" timestamp="1598865925582" />
-    <state x="403" y="292" width="1218" height="710" key="SettingsEditor" timestamp="1599807202517">
-      <screen x="0" y="0" width="1920" height="1080" />
+    <state x="537" y="379" width="1218" height="710" key="SettingsEditor" timestamp="1599880454845">
+      <screen x="0" y="0" width="2560" height="1400" />
     </state>
+    <state x="537" y="379" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1599880454845" />
     <state x="461" y="165" key="SettingsEditor/1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1598847819984" />
     <state x="403" y="292" width="1218" height="710" key="SettingsEditor/1920.0.1536.864/0.0.1920.1080@0.0.1920.1080" timestamp="1599807202517" />
     <state x="681" y="261" width="654" height="524" key="StructurePopup" timestamp="1598847795549">

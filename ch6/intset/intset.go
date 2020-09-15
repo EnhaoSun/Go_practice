@@ -72,15 +72,15 @@ type IntSet struct {
 
 // Has reports whether the set contains the non-negative value x.
 func (s *IntSet) Has(x int) bool {
-	//word, bit := x/64, uint(x&0x3F)
-	word, bit := x/64, uint(x%64)
+	word, bit := x/64, uint(x&0x3F)
+	//word, bit := x/64, uint(x%64)
 	return word < len(s.words) && s.words[word]&(1<<bit) != 0
 }
 
 // Add adds the non-negative value x to the set.
 func (s *IntSet) Add(x int) {
-	//word, bit := x/64, uint(x&0x3F)
-	word, bit := x/64, uint(x%64)
+	word, bit := x/64, uint(x&0x3F)
+	//word, bit := x/64, uint(x%64)
 	for word >= len(s.words) {
 		s.words = append(s.words, 0)
 	}
@@ -123,7 +123,9 @@ func (s *IntSet) String() string {
 }
 func main() {
 	var x IntSet
-	x.Add(1)
-	x.Add(0)
+	for i := 0; i < 100; i++  {
+		x.Add(i)
+	}
 	fmt.Println(x.String())
+	fmt.Println(x.Has(101))
 }

@@ -1,4 +1,4 @@
-package main
+package intset
 
 import (
 	"bytes"
@@ -246,6 +246,7 @@ func (s *IntSet) SymmetricDifference(t *IntSet) {
 	}
 }
 
+/*
 func main() {
 	var x, y IntSet
 	x.Add(1)
@@ -267,3 +268,4 @@ func main() {
 	fmt.Println(x.String())
 	fmt.Println(x.Elems())
 }
+ */
